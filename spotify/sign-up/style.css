@@ -59,19 +59,52 @@ footer{
   }
 
   .box{
-      background-color: gray;
+      
       line-height: 30px;
       height: 50px;
       width: 500px;
   }
  #q1 {
-     align-items:unset;
+     
      font-weight: 900;
  }
  section .container .ul{
      color:white;
  }
- .ul .li .a {
+ .a {
      color:green;
  }
- .q2
+ .day-box {
+     width: 100px;
+     height:50px;
+ }
+
+
+ .month-box {
+    width: 300px;
+    height:50px;
+}
+.year-box {
+    width: 100px;
+    height:50px;
+}
+.second-button {
+    width: 420px;
+      border-radius: 550px;
+      line-height: 1;
+      height: 70px;
+      color:white;
+      background-color:#425df5;
+      font-weight: 1000;
+      border: 0px;
+}
+.second-button:hover {
+    color: black;
+  cursor: pointer;
+  background-color:gray;
+}
+footer .container{
+    flex-direction: column;
+    justify-content: center;
+  
+}
