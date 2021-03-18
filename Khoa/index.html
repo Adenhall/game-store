@@ -8,8 +8,11 @@
     <title>Google</title>
     <link rel="icon" href="https://bit.ly/3a6NgB1" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="results.html">
     <link rel="stylesheet" crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" />
+        
+        
 </head>
 
 <body>
@@ -23,11 +26,18 @@
             <img src="https://pngimg.com/uploads/google/google_PNG19644.png" alt="Google" height="300" width="800" />
         </div>
         <br />
-        <div class ="input autofocus">
-            <i class="fas fa-search"></i>
-            <input autofocus />  
-            <i class="fas fa-keyboard"></i>
-             </div>
+        <div class="input-box">
+          <img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/search-512.png" class="search-icon">
+          <input autofocus />  
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Keyboard-icon_Wikipedians.svg/1280px-Keyboard-icon_Wikipedians.svg.png" class="keyboard-icon">
+          <img src="data:image/png;base64,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" class="mic-icon">
+
+        </div>
+        
+        
+      
+       
+            
         
         <br />
         <div class="button-container">
