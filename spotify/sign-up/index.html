@@ -49,9 +49,39 @@
                     <h3 id="q1">Bạn tên là gì?</h3>
                     <input placeholder="Chúng tôi nên gọi bạn bằng gì?" class="box">
                     <h3 id="q1">Ngày sinh</h3>
-                    <input placeholder="Ngày" class="day-box">
-                    <input placeholder="Tháng" class="month-box">
-                    <input placeholder="Năm" class="year-box">
+                    <div class="date">
+                       
+                            <input placeholder="Ngày" class="day-box">
+
+                        
+                        
+                        
+                               
+                               
+                                  <select placeholder="Tháng" id="month" name="month">
+                                    <option disabled selected>Tháng</option>
+                                    <option>January</option>
+                                    <option>February</option>
+                                    <option>March</option>
+                                    <option>April</option>
+                                    <option>May</option>
+                                    <option>June</option>
+                                    <option>July</option>
+                                    <option>August</option>
+                                    <option>September</option>
+                                    <option>October</option>
+                                    <option>November</option>
+                                    <option>December</option>
+                                  </select>
+                                  
+                        
+                        
+                            <input placeholder="Năm" class="year-box">
+    
+                       
+                        
+                    </div>
+                    <!-- <input type="month" placeholder="Tháng" class="month-box"> -->
                     <br />
                     
                     
@@ -66,8 +96,19 @@
     </section>
     <footer>
         <div class="container" style="align-items: center">
-            <div class="check-box" style="align-items: center;display: flex; justify-content: space-between">
-                <p><span><input type="checkbox"></span>Nam<span><input type="checkbox"></span>Nữ<span><input type="checkbox"></span>Giới tính trung lập</span></p>
+            <div class="check-box">
+                
+                <!-- <label for="month">Month:
+                    
+                </label><span><input type="checkbox"></span>Nam<span><input type="checkbox"></span>Nữ<span><input type="checkbox"></span>Giới tính trung lập</span></p> --> 
+                <input type ="checkbox" class="nam-box" name="nam-box">
+                <label for="nam-box">Nam</label>
+                <input type ="checkbox" class="nu-box" name="nu-box">
+                <label for="nu-box">Nữ</label>
+                <input type ="checkbox" class="third-box" name="third-box">
+                <label for="third-box">Giới tính trung lập</label>
+
+                
                 
             </div>
                 <h4><span><input type="checkbox"></span>Chia sẻ dữ kiệu đăng ký của tôi với các nhà cung cấp nội dung Spotify cho mục đích tiếp thị</h4>
