@@ -1,0 +1,168 @@
+* {
+    color: white;
+    margin: 0px;
+}
+
+nav {
+    height: 60px;
+    background-color: black;
+}
+
+section {
+    height: 800px;
+    background-color: orange;
+}
+
+footer {
+    height: 600px;
+    background-color: black;
+}
+
+.spotify-logo {
+    width: 132px;
+    height: 41.88px;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1170px;
+}
+
+.container>ul {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+ul>li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+ul>li>a {
+    text-decoration: none;
+}
+
+section {
+    height: 800px;
+    background-color: #f037a5;
+    background: linear-gradient(#f037a5 -60%, #fae62d 140%);
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(-60%, #f037a5), color-stop(140%, #fae62d));
+}
+
+.hero-img {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://www.scdn.co/i/home/hero-burst.svg");
+}
+
+#title {
+    color: white;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: -0.04em;
+}
+
+section .container {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-spotify {
+    border: 0px;
+    width: 260px;
+    color: white;
+    margin: 0 auto;
+    line-height: 1;
+    font-size: 14px;
+    margin-top: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 500px;
+    padding: 18px 42px 18px;
+    background-color: #1db954;
+    text-transform: uppercase;
+    transition-duration: 0.3s;
+}
+
+.btn-spotify:hover {
+    cursor: pointer;
+    background-color: #1ed760;
+}
+
+.column>h1 {
+    color: #919496;
+    font-size: 13.5px;
+}
+
+.column>h1,
+p {
+    margin-bottom: 15px;
+}
+
+.footer-logo {
+    display: flex;
+}
+
+.footer-logo>h1 {
+    color: white;
+    font-size: 2em;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-icons {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icons>.fab {
+    margin: 15px;
+}
+
+.footer-icons>.fab:hover {
+    color: green;
+}
+
+.footer {
+    display: flex;
+    padding: 20px;
+}
+
+.container>.left {
+    flex: 1;
+    justify-content: space-between;
+}
+
+.container>.right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fab {
+    font-size: 50px;
+}
+
+a:hover {
+    color: green;
+}
+
+.column>p:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.left>p:hover {
+    color: green;
+}
