@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+.body {
+    background-color: green;
+    max-width: 600px;
+}
+
+.logo-div {
+    padding: 10px;
+    text-align: center;
+}
+
+.logo-divider {
+    margin-top: 20px;
+    position: absolute;
+    width: 92%;
+    left: 4%;
+}
+
+.didi {
+    display: inline-block;
+    width: 30%;
+}
+
+.spotify-logo {
+    width: 30%;
+    height: 30%;
+}
+
+.button-div {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.emaillog {
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.button-FB {
+    border: 0px;
+    border-radius: 500px;
+    height: 60px;
+    color: white;
+    background-color: rgb(58, 88, 151);
+    width: 80%;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.form-div {
+    text-align: center;
+}
+
+.form-div.one {
+    background-color: red;
+}

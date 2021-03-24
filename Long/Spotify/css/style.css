@@ -27,7 +27,7 @@ footer {
     height: 100%;
     display: flex;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0px 15px;
     max-width: 1170px;
 }
 
@@ -99,6 +99,14 @@ section .container {
     background-color: #1ed760;
 }
 
+.containerfoo {
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1170px;
+}
+
 .column>h1 {
     color: #919496;
     font-size: 13.5px;
@@ -111,6 +119,7 @@ p {
 
 .footer-logo {
     display: flex;
+    width: 20%;
 }
 
 .footer-logo>h1 {
@@ -139,14 +148,13 @@ p {
     padding: 20px;
 }
 
-.container>.left {
+.containerfoo>.left {
     flex: 1;
     justify-content: space-between;
 }
 
-.container>.right {
+.containerfoo>.right {
     flex: 1;
-    display: flex;
     justify-content: flex-end;
 }
 
