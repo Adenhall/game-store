@@ -1,0 +1,56 @@
+body {
+    background-color: beige;
+    text-align: center;
+}
+
+.top-img-div {
+    justify-content: center;
+    display: flex;
+    max-height: 600px;
+    position: sticky;
+}
+
+.game-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info-board {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    display: flex;
+    min-height: 1000px;
+    border-style: double hidden hidden hidden;
+    border-color: green;
+    border-width: 10px;
+    justify-content: space-around;
+}
+
+.big-bolded {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.general-info {
+    font-size: 16px;
+    width: 65%;
+}
+
+span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.headtag {
+    font-size: 20px;
+}
+
+.left {
+    width: 25%;
+}
+
+.details {
+    display: flex;
+}
