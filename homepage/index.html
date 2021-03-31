@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAMESTORE</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+  <section>
+    <div class="container2">
+      <i class="fas fa-home"></i>
+      <a class="action">Action</a>
+      <a class="adventure">Adventure</a>
+      <a class="arcade">Arcade</a>
+      <a class="sports">Sports</a>
+
+      <img src="https://img.icons8.com/pastel-glyph/2x/search--v2.png" class="search-icon">
+      <input autofocus class="searchbar" placeholder="Search for games...">
+
+
+    </div>
+    <div class="container3">
+      <div class="left">
+        <div class="trending-game">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://lauf1.com/wp-content/uploads/2019/04/cau-hinh-choi-pubg-mobile-1280x720.png"
+                  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://ragus.vn/wp-content/uploads/2020/09/Link-Tai-Game-Grand-Theft-Auto-5-Viet-Hoa-Mien-Phi-Thanh-Cong.png"
+                  class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="gameinfo">
+          <div class="review">
+            <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://oneesports.blob.core.windows.net/cdn-data/wp-content/uploads/sites/4/2020/09/pubg-pc-auto-battle-450x252.jpg"
+                    class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://lauf1.com/wp-content/uploads/2019/04/cau-hinh-choi-pubg-mobile-1280x720.png"
+                    class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://ragus.vn/wp-content/uploads/2020/09/Link-Tai-Game-Grand-Theft-Auto-5-Viet-Hoa-Mien-Phi-Thanh-Cong.png"
+                    class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div> -->
+            <img src="https://akm-img-a-in.tosshub.com/sites/btmt/images/stories/pubg_game_660_141020121948.jpg">
+            <h1>PLAYERUNKNOWN'S BATTLEGROUND</h1>
+            <div class="clickhere">
+              <a class="clickherebtn" href="#">
+                <span>Click here</span>
+                <span>Click here</span>
+              </a>
+
+            </div>
+
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="swiper-container">
+
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="box">
+                  <img
+                    src="https://www.flaticon.com/svg/vstatic/svg/157/157248.svg?token=exp=1616898087~hmac=6b57602d7b99110ed69f6ce40abd4595"
+                    class="quote">
+
+                  <div class="comments">
+                    <p>I hate to say this and it's sad to see - but the state of the game now is awful. Yes it plays
+                      quite well and visually looks better than ever - but it's really lost that PUBG magic and feel.
+                      Empty feeling lobbies with bots filling numbers, a new menu / system every time I log on it feels
+                      like, and so many micro transactions. Everything just feels cluttered and complicated as soon as
+                      you log on with a very messy UI.
+
+                      When you get into a lobby you're now greeted by people running around as multi coloured anime
+                      looking characters/skins, and I'm pretty sure Barney the dinosaur ran past me at one point... It's
+                      like it's suddenly lost it's own identity and copied Fortnite?!
+
+                      It really feels like the Devs completely lost the roadmap and made the rest up as they went along,
+                      stealing other games recipes and jumbling it up into one mess.
+
+                      I really hate to write this as PUBG was one of my favourite games of all time. Very let down.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img
+                    src="https://www.flaticon.com/svg/vstatic/svg/157/157248.svg?token=exp=1616898087~hmac=6b57602d7b99110ed69f6ce40abd4595"
+                    class="quote">
+
+                  <div class="comments">
+                    <p> I experienced a quiet terror in my first PlayerUnknown's BattleGrounds (PUBG) match.
+                      The second one elicited a similar feeling. The third match was much better than the previous ones,
+                      as I managed to carefully drive around on a motorbike until fewer than 10 players remained.
+                      The next time, I was slowly killed off for not staying within the rescinding play area boundaries.
+                      Such is life while playing PUBG.
+                      Despite some frustrating experiences, PUBG's great visuals, fun premise, and massive player base
+                      make it a solid PC and Xbox One title.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img
+                    src="https://www.flaticon.com/svg/vstatic/svg/157/157248.svg?token=exp=1616898087~hmac=6b57602d7b99110ed69f6ce40abd4595"
+                    class="quote">
+
+                  <div class="comments">
+                    <p>As you can see, I have an unreasonable amount of time spent on this game. After playing pubg for
+                      a solid two years after its release in 2017 I can safely say that this game is not worth anyone's
+                      time anymore. The "pay to look good" cosmetic reworks only really benefit people who want to spend
+                      money on a game that loses more and more of its player base everyday. "Let me buy all these skins
+                      so the BOTS I kill can see how cool i look". The straw that broke the camel's back for me was my
+                      group's sudden return to this game about 2 weeks ago to "test the waters again". After 2 weeks of
+                      play one of my close friends RECEIVED A 3 DAY BAN as he was about to eliminate the last man in our
+                      game and win a chicken dinner. I've played this game for 4 years and I or any of my friends have
+                      never received a ban for any reason whatsoever. Apparently if one is good at the game, and gets
+                      reported enough times, they receive a ban WHILE THEY ARE INVESTIGATED. As a business that is
+                      slowly losing its customer base, the worst possible thing you could do is ban a player temporarily
+                      ONLY based on how many people have reported them. What you should be doing is investigating them
+                      while they play or if not closely after they finish games so you actually have solid evidence
+                      before you ban someone. Krafton can spout back rules, regulations, guidelines, and policies all
+                      they want. But coming back to a game and getting banned for not doing anything wrong, makes my
+                      friends and I feel like uninstalling the game and never playing it again. Bye pubg its been fun I
+                      hope the investigation goes well for you guys cause you lost 6 players, with this 3 day ban,
+                      forever. Deuces
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="right">
+
+        <img src="https://cdnmedia.webthethao.vn/uploads/img/files/images/fullsize/pubg.jpg" class="pubg">
+        <a class="gamename">Playerunknown's Battlegrounds</a>
+        <br>
+        <img src="https://steamcdn-a.akamaihd.net/steam/apps/1345070/header.jpg" class="propandseek">
+        <a class="gamename">Prop and Seek</a>
+        <img src="https://static.taigame.org/game_images/7501.jpg" class="golf">
+        <a class="gamename">Golf With Your Friends</a>
+        <img src="https://steamcdn-a.akamaihd.net/steam/apps/1418300/capsule_616x353.jpg?t=1605370393"
+          class="scribbleit">
+        <a class="gamename">Scribble IT</a>
+        <img src="https://steamcdn-a.akamaihd.net/steam/apps/1418300/capsule_616x353.jpg?t=1605370393"
+          class="scribbleit">
+        <a class="gamename">Scribble IT</a>
+        <img src="https://steamcdn-a.akamaihd.net/steam/apps/1418300/capsule_616x353.jpg?t=1605370393"
+          class="scribbleit">
+        <a class="gamename">Scribble IT</a>
+
+      </div>
+
+    </div>
+
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>var swiper = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflow: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true
+      },
+      loop: true
+    });</script>
+</body>
+
+</html>

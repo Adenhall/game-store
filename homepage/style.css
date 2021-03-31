@@ -1,0 +1,266 @@
+body{
+    margin:0px;
+}
+
+.container2{
+    height:80px;
+    background: linear-gradient( #44095c,#b08312,
+    #11727d
+    ) ;
+    width:100%;
+    display:flex;
+    z-index: 1;
+    align-items: center;
+    position:fixed;
+    border:10px solid black;
+}
+.fa-home{
+    height:100%;
+    width:5%;
+    margin-left:2%;
+  
+    font-size:50px;
+    border:bold;
+    color:black;
+    cursor:pointer;
+}
+
+.action{
+    height:100%;
+    width:200px;
+    margin-left:2%;
+    text-decoration: none;
+    font-size:40px;
+    border:bold;
+    color:black;
+    cursor:pointer;
+}
+.adventure{
+    height:100%;
+    width:200px;
+    margin-left:2%;
+    text-decoration: none;
+    font-size:40px;
+    border:bold;
+    color:black;
+    cursor:pointer;
+}
+.arcade{
+    height:100%;
+    width:200px;
+    margin-left:5%;
+    text-decoration: none;
+    font-size:40px;
+    border:bold;
+    color:black;
+    cursor:pointer;
+}
+.sports{
+   
+        height:100%;
+        width:200px;
+        margin-left:2%;
+        text-decoration: none;
+        font-size:40px;
+        border:bold;
+        color:black;
+        cursor:pointer;
+}
+.searchbar{
+    position:absolute;
+    height:50%;
+    width:300px;
+    margin-left:80%;
+    
+}
+.search-icon{
+    position:absolute;
+    height:50%;
+    margin-left: 78%;
+    
+}
+.container3{
+    padding-top:60px;
+    width:100%;
+    display:flex;
+    height: 1900px;
+    background: linear-gradient( #44095c,#b08312,
+    #11727d
+    ) ;
+    padding-bottom: 0;
+}
+.left{
+    margin-left:0px;
+    height:1000px;
+    width:1400px;
+    background-color: #84a38d;
+    
+    border-left:none;
+}
+.right{
+    position: fixed;
+    margin-left:73.5%;
+    margin-top:10px;
+    height:800px;
+    width:15%;
+    background-color: #305e3d;
+    border:10px solid black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    text-align: center;
+    
+    
+}
+.gamename{
+    color:black;
+    font-size: 20px;
+    text-decoration: none;
+    cursor:pointer;
+}
+.gamename:hover{
+    color:white;
+}
+
+.trending-game{
+    height:813px;
+    width:100%;
+    background-color: #84a38d;
+    border:10px solid black;
+    border-left:none;
+   
+    border-right:none;
+}
+.pubg{
+    width:200px;
+    height:200px;
+    margin-top:30px;
+}
+.propandseek{
+    width:200px;
+    height:200px;
+}
+.golf{
+    width:200px;
+    height:200px;
+}
+.scribbleit{
+    width:200px;
+    height:200px;
+}
+.carousel-inner{
+    margin-top:10px;
+}
+
+  .gameinfo{
+    background: linear-gradient( #44095c,#b08312,
+    #11727d
+    ) ;
+      position:relative;
+      width:100%;
+      height:100%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction:column;
+     
+  }
+  .box{
+      height:100%;
+        width:50%;
+      padding:40px;
+      padding-top:50px;
+      border:bold;
+      font-size: 800;
+
+  
+  }
+.quote{
+    position:absolute;
+    top:5%;
+    right:5%;
+    height:100px;
+    opacity:0.2;    
+}
+
+.swiper-wrapper{
+    width:10px;
+
+}
+  .swiper-container {
+    
+   height:1000px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    
+   
+  }
+  .review{
+      margin-top:20px;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .clickhere{
+      position: absolute;
+      height:100px;
+    margin-top: 500px;
+     width:30%;
+     display: flex; 
+     justify-content: center;
+    
+  }
+  .clickherebtn{
+      font-family: 'Poppins',sans-serif;
+      width:100%;
+      height:100%;
+      background-color:#222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      font-size:40px;
+  }
+  .clickherebtn span{
+      position:absolute;
+      z-index: 1;
+  
+  }
+  .clickherebtn::before{
+      content:'';
+      position:absolute;
+      top:0;
+      left:0;
+      width:10px;
+      height:100%;
+      background-color: #00fe73;
+      transition: 0.5s ease-in-out;
+  }
+  .clickherebtn::after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    width:10px;
+    height:100%;
+    background-color: #00fe73;
+    transition: 0.5s ease-in-out;
+}
+.clickherebtn:hover::before,
+.clickherebtn:hover::after{
+    width:50%;
+    color:black;
+    font-size:100%;
+}
